@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTSP Streams</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="topTools">
+      <input placeholder="Enter RTSP Link" type="text" id="rtsp" />
+      <button onclick="handlePublish()">Publish Camera</button>
+    </div>
+
+    <div id="videos"></div>
+
+    <script
+      defer
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/public/mediasoup-client.min.js"></script>
+    <script defer src="/public/script.js"></script>
+  </body>
+</html>

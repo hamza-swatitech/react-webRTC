@@ -1,0 +1,350 @@
+:root {
+  --bg-main: #001016;
+  --bg-body: #00030a;
+  --bg-primary: #00353a;
+  --sidebar-width: 15%;
+  --rounded-sm: 16px;
+  --text-primary: #00fffb;
+  --bg-card: #081c24;
+  --table-header: #01252a;
+  --table-border: #3937374d;
+  --text-color: #01e8e580;
+}
+
+/* W3 school scrollbar code */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00030a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0fffff;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #081c24;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* W3 school scrollbar code */
+.text-xs {
+  font-size: 12px;
+}
+.form-control {
+  border: none !important;
+}
+.border-b {
+  border-bottom: 1px solid var(--table-border) !important;
+}
+.form-control:focus {
+  border-color: none !important;
+  outline: none !important;
+  border: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.form-select:focus {
+  /* border-color: none !important; */
+  outline: none !important;
+  /* border: none !important; */
+  /* border-color: none !important; */
+  box-shadow: none !important;
+  /* background-color: transparent !important; */
+}
+.bg-table-header {
+  background-color: var(--table-header) !important;
+}
+.bg-card {
+  background-color: var(--bg-card);
+}
+.rounded-sm {
+  border-radius: var(--rounded-sm);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-card {
+  background-color: var(--bg-card) !important;
+}
+.borderPrimary {
+  border: 1px solid var(--text-color) !important;
+}
+
+.textColor {
+  color: var(--text-color) !important;
+}
+.text-main {
+  color: var(--text-primary) !important;
+}
+.bgMain {
+  background-color: var(--bg-main) !important;
+}
+.bgPrimary {
+  background-color: var(--bg-primary);
+}
+body {
+  background-color: var(--bg-body) !important;
+  user-select: none;
+}
+.mainWrapper {
+  height: 100vh;
+  overflow: hidden;
+  /* padding-bottom: 20px; */
+}
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-main);
+  height: 97%;
+}
+.mainContent {
+  width: 85%;
+  height: 98vh;
+  position: relative;
+  padding: 0 5px;
+  margin-left: var(--sidebar-width);
+}
+.navLink {
+  display: flex;
+  gap: 10px;
+  padding: 12px 10px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+}
+.sidebarLinks:hover svg path {
+  fill: #00fffb;
+}
+/* .navLink */
+.navLink:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: all 0.3s linear;
+}
+.h-96 {
+  height: 95% !important;
+}
+.activeLink {
+  display: flex;
+  gap: 10px;
+  padding: 12px 10px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 6px;
+  background-color: var(--bg-primary);
+}
+
+.searchBar {
+  display: flex;
+  padding: 2px 10px;
+  gap: 2px;
+  border-radius: 6px;
+  background-color: #081c24;
+  align-items: center;
+  font-size: 14px;
+}
+.searchBar input::placeholder {
+  color: rgb(161, 153, 153);
+}
+.searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white !important;
+}
+.routes {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-main);
+  position: relative;
+  top: 20px;
+}
+.iconWrapperActive {
+  background-color: var(--bg-primary) !important;
+}
+.isActiveSvg {
+  fill: var(--text-primary) !important;
+}
+.iconWrapper {
+  border-radius: 6px;
+}
+.simpleIconWrapper {
+  border-radius: 6px;
+}
+.iconWrapper:hover {
+  background-color: var(--bg-primary) !important;
+  transition: 0.3s color ease-in;
+}
+.iconWrapper:hover svg {
+  fill: var(--text-primary);
+}
+.userMenuWrapper {
+  top: 50px;
+  right: 10px;
+  width: 250px;
+  border: 1px solid red;
+  padding: 15px 10px;
+  border-radius: 6px;
+  border: 0.5px solid #ffffff2e;
+  z-index: 999;
+  box-shadow: -8px 6px 22px 0px #0000001a;
+
+  box-shadow: -32px 25px 41px 0px #00000017;
+
+  box-shadow: -72px 57px 55px 0px #0000000d;
+
+  box-shadow: -127px 102px 65px 0px #00000003;
+
+  box-shadow: -199px 159px 71px 0px #00000000;
+  height: auto;
+  background-color: #001016;
+}
+
+.iconwithTextChip {
+  display: flex;
+  padding: 6px 6px;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  border-radius: 6px;
+  background-color: var(--bg-main);
+}
+.singleCamera {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /* height: 170px !important; */
+  border: 0.5px solid #00353a !important;
+}
+.singleScreenCamera {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /* height: 425px !important; */
+  border: 0.5px solid #00353a !important;
+}
+.width-0 {
+  width: 22% !important;
+}
+.width-1 {
+  width: 30% !important;
+  text-align: center;
+}
+.width-2 {
+  width: 30% !important;
+  text-align: center;
+}
+/* .stramsRoute {
+  position: absolute;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+} */
+.cameraCardsWrapper {
+  height: 60vh;
+  overflow-y: auto;
+}
+tbody {
+  display: block;
+  height: 100%;
+  overflow: auto;
+}
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  /* table-layout: fixed;   */
+}
+thead {
+  width: 100%;
+}
+.activityTableOuter {
+  height: 26vh;
+  overflow: hidden !important;
+}
+.activityTable {
+  border: 1px solid #3937374d;
+}
+.streamsRoute {
+  overflow: hidden !important;
+}
+.streamHeader {
+  height: 7%;
+}
+.streamArea {
+  height: 90%;
+}
+.mainPageTemp {
+  height: 81vh;
+}
+.mainScreenLy {
+  height: 88vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.displayMainView {
+  height: 100vh;
+}
+.topSearchbar {
+  height: 8vh;
+}
+.rtsp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.95;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rtsp-modal .inner-content {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inner-content input {
+  padding: 8px 3px;
+  border-radius: 7px;
+  flex: 1;
+  border: 1px solid gray;
+  background: white;
+}
+.inner-content input:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+.inner-content button {
+  padding: 8px 3px;
+  white-space: nowrap;
+}
+.rtsp-modal .close-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.rtsp-modal .close-icon:hover {
+  stroke: white;
+}

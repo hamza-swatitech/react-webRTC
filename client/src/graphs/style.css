@@ -1,0 +1,17 @@
+.recharts-layer .recharts-radial-bar-background path {
+  fill: #00bacb17 !important;
+}
+.graphText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.graphText h4 {
+  color: #00fffb;
+  font-size: 30px;
+  font-weight: bold;
+}
+.graphText p {
+  color: #00fffb99;
+}

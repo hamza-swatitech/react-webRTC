@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="apple-touch-icon" sizes="76x76" href="./static/img/apple-icon.png">
+      <link rel="icon" type="image/png" href="./static/img/favicon.svg">
+      <title> Swati Eye </title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> 
+      <link href="../static/css/nucleo-icons.css" rel="stylesheet" />
+      <link href="../static/css/nucleo-svg.css" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> 
+      <link href="../static/css/nucleo-svg.css" rel="stylesheet" />
+      <link id="pagestyle" href="../static/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel='stylesheet' href='https://cdn.plyr.io/3.6.2/plyr.css'>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   </head>
+   <body onload="loadFirstCamera()">
+      <style> @import url('http://fonts.cdnfonts.com/css/product-sans'); </style>
+      <div class="container">
+         <div class="card">
+            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1"> <a href="javascript:;" class="d-block">
+               </a> 
+            </div>
+            <div class="card-body pt-2">
+               <span style="background-image: linear-gradient(310deg, #251ACB, #4510E9);" class="text-gradient text-primary text-lg font-weight-bold my-2">Welcome to Swati EYE</span>  <br> <br> <br> 
+               <h5>A Swati Eye platform to view any camera stream in HTML5 or a users platform to manage their security cameras</h5>
+               <br> <br> <input list="cameras" onchange="changeCamera()" class="form-control" name="edtAddress" id="edtCameraIP"> <br> <br> <button type="button" onclick="changeCamera()" class="btn bg-gradient-info">Change Camera</button> <br> <br>  <br> <img id="cameraA" style=" width: 100%; height: 50%;" class="img-fluid" src="./video_feed"> <br> <br>  
+            </div>
+            <datalist id="cameras">
+               <option value=rtsp://React:Live+123@192.168.20.234:554>
+            </datalist>
+         </div>
+      </div>
+      </div> <footer class="footer py-5"> <div class="container">  <div class="row"> <div class="col-8 mx-auto text-center mt-1"> <h5 style="font-family: 'Product Sans', sans-serif;" class=" text-lg font-weight-bold my-2"> Copyright © <script> document.write(new Date().getFullYear()) </script> Made with :heart: by <a style="color:blue" href="https://swatitech.com"> Swati Tech</a> </h5> </div> </div> </div> </footer> <!-- partial --> <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script> <script src='https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script> <script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js'></script>
+   </body>
+   <!-- <script> var win = navigator.platform.indexOf('Win') > -1; if (win && document.querySelector('#sidenav-scrollbar')) { var options = { damping: '0.5' } Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options); }</script>Github buttons<script async defer src="https://buttons.github.io/buttons.js "></script><script src="../static/js/soft-ui-dashboard.min.js?v=1.0.3 "></script><script src="../static/js/cameraRoute.js"></script></body> -->
+</html>
